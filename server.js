@@ -18,12 +18,9 @@ mongoose.connect(MONGODB_URI, {
 });
 
 const db = mongoose.connection;
-db.on("error", (err) => {
-    console.log(
-        err.message,
-        " is Mongod not running?/Problem with Atlas Connection?"
-    );
-});
+db.on("error", err =>
+    console.log(err.message," is Mongod not running?/Problem with Atlas Connection?")
+);
 db.on("connected", () => {
     console.log("mongo connected: ", MONGODB_URI);
 });
