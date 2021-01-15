@@ -4,7 +4,11 @@ body {
 h1, h2, h3 {
   text-align: center;
 }
+<<<<<<< HEAD
 img, input, button, label, summary {
+=======
+img, input, button, label {
+>>>>>>> 5d2cc7967cd405ebd35ed0260fc5ef09235600c3
   display: block;
   margin: 10px auto;
   text-align: center;
@@ -18,13 +22,20 @@ img, input, button, label, summary {
 .ballCreate:hover {
   height: 90px;
   width: 90px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5d2cc7967cd405ebd35ed0260fc5ef09235600c3
 }
 .ballGif {
   height: 150px;
   width: 150px;
   cursor: url("https://icons.iconarchive.com/icons/designcontest/vintage/32/Hand-icon.png"), auto !important;
+<<<<<<< HEAD
   border-radius: 50%;
+=======
+
+>>>>>>> 5d2cc7967cd405ebd35ed0260fc5ef09235600c3
 }
 li {
   list-style-type: none;
