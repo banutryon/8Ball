@@ -12,7 +12,19 @@ eightBall.get("/", (req, res) => {
 
 eightBall.get("/seed", (req, res) => {
     EightBall.insertMany(SeedData, () => {
-        res.redirect("/birds");        
+        res.redirect("/eightball");        
+    });
+});
+
+eightBall.get("/dropcollection", (req, res) => {
+    EightBall.collection.drop();
+    res.redirect("/eightball");
+});
+
+eightBall.get("/reset", (req, res) => {
+    EightBall.collection.drop();
+    EightBall.insertMany(SeedData, () => {
+        res.redirect("/eightball");        
     });
 });
 
