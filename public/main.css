@@ -1,10 +1,14 @@
+*{
+  padding: 0;
+  margin: 0;
+}
 body {
   background-color: lightblue;
 }
 h1, h2, h3 {
   text-align: center;
 }
-img, input, button, label {
+img, input, button, label, summary {
   display: block;
   margin: 10px auto;
   text-align: center;
@@ -15,15 +19,28 @@ img, input, button, label {
   cursor: url("https://icons.iconarchive.com/icons/designcontest/vintage/32/Hand-icon.png"), auto !important;
 }
 
+
 .ballCreate:hover {
   height: 90px;
   width: 90px;
+
+}
+.Eball {
+  z-index: -1;
+  height: auto;
+  width: 100vw;
 }
 .ballGif {
-  height: 150px;
-  width: 150px;
+  display: block;
+  margin: -440px auto 0 auto;
+  height: auto;
+  width: 65vw;
   cursor: url("https://icons.iconarchive.com/icons/designcontest/vintage/32/Hand-icon.png"), auto !important;
-
+  border-radius: 50%;
+}
+span, summary{
+  display: block;
+  margin: 0 auto;
 }
 li {
   list-style-type: none;
