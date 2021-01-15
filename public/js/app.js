@@ -50,9 +50,10 @@ class App extends React.Component {
       return (
         <div>
         {/* create form  */}
-        <details className="view create">
+        <details className="create">
         <summary><img className="ballCreate"
         src="ball.png" alt="Create Ball" /></summary>
+        <div className="formBorder">
         <h3>Add new Gif to 8 Ball</h3>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="name">Name</label>
@@ -69,6 +70,7 @@ class App extends React.Component {
         <br />
         <input className="myButton" type="submit" value="Add Gif" />
         </form>
+        </div>
         </details>
         {/* display content  */}
         <span>
