@@ -12,6 +12,7 @@ app.use(express.static("public"));
 const eightBallController = require("./controllers/8ball_controller.js");
 app.use("/eightball", eightBallController);
 
+
 const MONGODB_URI = process.env.MONGODB_URI;
 mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
