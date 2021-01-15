@@ -8,6 +8,7 @@ body {
 h1, h2, h3 {
   text-align: center;
 }
+
 img, input, button, label, summary {
   display: block;
   margin: 10px auto;
@@ -29,6 +30,7 @@ img, input, button, label, summary {
   z-index: -1;
   height: auto;
   width: 100vw;
+
 }
 .ballGif {
   display: block;
@@ -36,11 +38,13 @@ img, input, button, label, summary {
   height: auto;
   width: 65vw;
   cursor: url("https://icons.iconarchive.com/icons/designcontest/vintage/32/Hand-icon.png"), auto !important;
+
   border-radius: 50%;
 }
 span, summary{
   display: block;
   margin: 0 auto;
+  border-radius: 50%;
 }
 li {
   list-style-type: none;
