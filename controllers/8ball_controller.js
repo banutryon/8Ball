@@ -1,11 +1,18 @@
 const express = require("express");
 const eightBall = express.Router();
 const EightBall = require("../models/8ball_model.js");
+const SeedData = require("../models/seed_model.js");
 
 // ROUTES
 eightBall.get("/", (req, res) => {
     EightBall.find({}, (err, foundAnswers) => {
         res.json(foundAnswers);
+    });
+});
+
+eightBall.get("/seed", (req, res) => {
+    EightBall.insertMany(SeedData, () => {
+        res.redirect("/birds");        
     });
 });
 
