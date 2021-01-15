@@ -32,11 +32,11 @@ img, input, button, label, summary {
 }
 .ballGif {
   display: block;
-  margin: -440px auto 0 auto;
+  margin: -83.5% auto 0 auto;
   height: auto;
-  width: 65vw;
+  width: 55vw;
   cursor: url("https://icons.iconarchive.com/icons/designcontest/vintage/32/Hand-icon.png"), auto;
-  border-radius: 50%;
+  border-radius: 20%;
 }
 span, summary{
   display: block;
