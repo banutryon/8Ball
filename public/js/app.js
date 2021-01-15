@@ -71,25 +71,18 @@ class App extends React.Component {
         </form>
         </details>
         {/* display content  */}
-
+        <span>
+        <img className="Eball"
+        src="ball.png" alt="Create Ball" />
         <ul>
           {this.state.ballArr.map((ball) => {
             return (
               <li key={ball._id}>
-
-
-              <h2 className="gifName">{ball.name}</h2>
-
-
-
-
               <details className="view">
               <summary><img className="ballGif"
               src={ball.url} alt={ball.name} /></summary>
               <br/>
-              <button className="myButton"
-              value={ball._id}
-              onClick={this.deleteGif}>Delete</button>
+              <h2 className="gifName">{ball.name}</h2>
               {/* edit button  */}
               <summary>Edit Gif</summary>
               <form id={ball._id}
@@ -108,6 +101,9 @@ class App extends React.Component {
               type="submit"
               value="Update Ball"/>
               </form>
+              <button className="myButton"
+              value={ball._id}
+              onClick={this.deleteGif}>Delete</button>
 
               </details>
               </li>
@@ -116,6 +112,7 @@ class App extends React.Component {
           })
         }
         </ul>
+        </span>
         </div>
       )
     }
