@@ -51,7 +51,9 @@ class App extends React.Component {
         <div>
         {/* create form  */}
         <details className="view create">
-        <summary>Add new Gif to 8 Ball</summary>
+        <summary><img className="ballGif"
+        src="https://w0.pngwave.com/png/555/526/billiard-balls-magic-8-ball-eight-ball-billiards-png-clip-art-thumbnail.png" alt={ball.name} /></summary>
+        <h3>Add new Gif to 8 Ball</h3>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="name">Name</label>
           <input
