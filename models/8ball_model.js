@@ -7,4 +7,6 @@ const eightBallSchema = new mongoose.Schema({
 
 const EightBall = mongoose.model("EightBall", eightBallSchema);
 
+
 module.exports = EightBall;
+
