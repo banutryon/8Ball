@@ -12,7 +12,7 @@ class App extends React.Component {
     event.preventDefault()
     event.target.reset()
 
-    axios.post('/movepropstore', this.state).then(response => this.setState({
+    axios.post('/eightball', this.state).then(response => this.setState({
       ballArr: response.data, name: "", url: ""})
     )
   }
@@ -59,10 +59,10 @@ class App extends React.Component {
           id="name"
           onChange={this.handleChange} />
           <br />
-          <label htmlFor="image">Image</label>
+          <label htmlFor="url">Image</label>
           <input
           type='text'
-          id='image'
+          id='url'
           onChange={this.handleChange} />
         <br />
         <input className="myButton" type="submit" value="Add Gif" />
@@ -74,11 +74,16 @@ class App extends React.Component {
           {this.state.ballArr.map((ball) => {
             return (
               <li key={ball._id}>
+
+
               <h2 className="gifName">{ball.name}</h2>
+
+
+
 
               <details className="view">
               <summary><img className="ballGif"
-              src={ball.image} alt={ball.name} /></summary>
+              src={ball.url} alt={ball.name} /></summary>
               <br/>
               <button className="myButton"
               value={ball._id}
@@ -103,7 +108,8 @@ class App extends React.Component {
               </form>
 
               </details>
-              </li> 
+              </li>
+
             )
           })
         }
