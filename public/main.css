@@ -1,3 +1,7 @@
+*{
+  padding: 0;
+  margin: 0;
+}
 body {
   background-color: lightblue;
 }
@@ -5,10 +9,14 @@ h1, h2, h3 {
   text-align: center;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 img, input, button, label, summary {
 =======
 img, input, button, label {
 >>>>>>> 5d2cc7967cd405ebd35ed0260fc5ef09235600c3
+=======
+img, input, button, label, summary {
+>>>>>>> Banu
   display: block;
   margin: 10px auto;
   text-align: center;
@@ -19,23 +27,43 @@ img, input, button, label {
   cursor: url("https://icons.iconarchive.com/icons/designcontest/vintage/32/Hand-icon.png"), auto !important;
 }
 
+
 .ballCreate:hover {
   height: 90px;
   width: 90px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 5d2cc7967cd405ebd35ed0260fc5ef09235600c3
+=======
+
+}
+.Eball {
+  z-index: -1;
+  height: auto;
+  width: 100vw;
+>>>>>>> Banu
 }
 .ballGif {
-  height: 150px;
-  width: 150px;
+  display: block;
+  margin: -440px auto 0 auto;
+  height: auto;
+  width: 65vw;
   cursor: url("https://icons.iconarchive.com/icons/designcontest/vintage/32/Hand-icon.png"), auto !important;
+<<<<<<< HEAD
 <<<<<<< HEAD
   border-radius: 50%;
 =======
 
 >>>>>>> 5d2cc7967cd405ebd35ed0260fc5ef09235600c3
+=======
+  border-radius: 50%;
+}
+span, summary{
+  display: block;
+  margin: 0 auto;
+>>>>>>> Banu
 }
 li {
   list-style-type: none;
