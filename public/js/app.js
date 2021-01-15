@@ -50,9 +50,10 @@ class App extends React.Component {
       return (
         <div>
         {/* create form  */}
-        <details className="view create">
-        <summary><img className="ballGif"
-        src="https://w0.pngwave.com/png/555/526/billiard-balls-magic-8-ball-eight-ball-billiards-png-clip-art-thumbnail.png" alt={ball.name} /></summary>
+        <details className="create">
+        <summary><img className="ballCreate"
+        src="ball.png" alt="Create Ball" /></summary>
+        <div className="formBorder">
         <h3>Add new Gif to 8 Ball</h3>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="name">Name</label>
@@ -69,27 +70,21 @@ class App extends React.Component {
         <br />
         <input className="myButton" type="submit" value="Add Gif" />
         </form>
+        </div>
         </details>
         {/* display content  */}
-
+        <span>
+        <img className="Eball"
+        src="ball.png" alt="Create Ball" />
         <ul>
           {this.state.ballArr.map((ball) => {
             return (
               <li key={ball._id}>
-
-
-              <h2 className="gifName">{ball.name}</h2>
-
-
-
-
               <details className="view">
               <summary><img className="ballGif"
               src={ball.url} alt={ball.name} /></summary>
               <br/>
-              <button className="myButton"
-              value={ball._id}
-              onClick={this.deleteGif}>Delete</button>
+              <h2 className="gifName">{ball.name}</h2>
               {/* edit button  */}
               <summary>Edit Gif</summary>
               <form id={ball._id}
@@ -108,6 +103,9 @@ class App extends React.Component {
               type="submit"
               value="Update Ball"/>
               </form>
+              <button className="myButton"
+              value={ball._id}
+              onClick={this.deleteGif}>Delete</button>
 
               </details>
               </li>
@@ -116,6 +114,7 @@ class App extends React.Component {
           })
         }
         </ul>
+        </span>
         </div>
       )
     }
