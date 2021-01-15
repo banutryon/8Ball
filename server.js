@@ -6,6 +6,8 @@ const mongoose = require("mongoose");
 const app = express();
 require("dotenv").config();
 const PORT = process.env.PORT || 3000;
+app.use(express.json());
+app.use(express.static("public"));
 
 const eightBallController = require("./controllers/8ball_controller.js");
 app.use("/eightball", eightBallController);
