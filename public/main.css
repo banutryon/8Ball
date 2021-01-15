@@ -1,3 +1,37 @@
 body {
   background-color: lightblue;
 }
+h1, h2, h3 {
+  text-align: center;
+}
+img, input, button, label, summary {
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+}
+.ballCreate {
+  height: 80px;
+  width: 80px;
+  cursor: url("https://icons.iconarchive.com/icons/designcontest/vintage/32/Hand-icon.png"), auto !important;
+}
+
+.ballCreate:hover {
+  height: 90px;
+  width: 90px;
+
+}
+.ballGif {
+  height: 150px;
+  width: 150px;
+  cursor: url("https://icons.iconarchive.com/icons/designcontest/vintage/32/Hand-icon.png"), auto !important;
+  border-radius: 50%;
+}
+li {
+  list-style-type: none;
+}
+.view summary::-webkit-details-marker {
+  display:none;
+}
+.view summary:focus {
+  outline: none;
+}

@@ -51,7 +51,9 @@ class App extends React.Component {
         <div>
         {/* create form  */}
         <details className="view create">
-        <summary>Add new Gif to 8 Ball</summary>
+        <summary><img className="ballCreate"
+        src="ball.png" alt="Create Ball" /></summary>
+        <h3>Add new Gif to 8 Ball</h3>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="name">Name</label>
           <input
