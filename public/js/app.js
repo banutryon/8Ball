@@ -74,12 +74,7 @@ class App extends React.Component {
           {this.state.ballArr.map((ball) => {
             return (
               <li key={ball._id}>
-
-
               <h2 className="gifName">{ball.name}</h2>
-
-
-
 
               <details className="view">
               <summary><img className="ballGif"
@@ -104,15 +99,15 @@ class App extends React.Component {
               <input
               className="myButton"
               type="submit"
-              value="Update Ball"
+              value="Update Ball"/>
               </form>
 
               </details>
-              </li>
-              </ul>
+              </li> 
             )
           })
         }
+        </ul>
         </div>
       )
     }
