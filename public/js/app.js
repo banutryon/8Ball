@@ -2,7 +2,10 @@ class App extends React.Component {
   state = {
     name: "",
     url: "",
-    ballArr: []
+    ballArr: [],
+    currentPhrase: "",
+    currentUrl: "",
+    currentID:""
   }
   handleChange = (event) => {
     this.setState({ [event.target.id]:
@@ -17,14 +20,14 @@ class App extends React.Component {
     )
   }
 
-    deleteGif = (event) => {
+  deleteGif = (event) => {
       axios.delete('/eightball/' + event.target.value).then(response => {
         this.setState({
           ballArr: response.data
         })
       })
-    }
-    updateGif = (event) => {
+  }
+  updateGif = (event) => {
       event.preventDefault()
       event.target.reset()
       const id = event.target.id
@@ -35,19 +38,37 @@ class App extends React.Component {
           url: ""
         })
       })
-    }
-
-    componentDidMount = () => {
+  }
+  selectMeme = (event) => {
+    event.preventDefault();
+    let theData = this.state.ballArr;
+    // console.log(`The data: ${theData}`);
+    let arrLen = theData.length;
+    // console.log(`The data length: ${arrLen}`);
+    const randomIndex = Math.floor(Math.random() * arrLen);
+    // console.log(`The index: ${randomIndex}`)
+    let meme = theData[randomIndex];
+    // console.log(`The meme: ${meme}`);
+    let name = meme.name;
+    // console.log(name);
+    let gif = meme.url;
+    // console.log(gif);
+    let id = meme._id;
+    console.log(id);
+    this.setState({currentPhrase: name});
+    this.setState({currentUrl: gif});
+    this.setState({currentID: id});
+  }
+  componentDidMount = () => {
         axios.get("/eightball").then(response => {
           this.setState({
               ballArr: response.data
           })
         })
-    }
+  }
 
-
-    render = () => {
-      return (
+  render = () => { 
+    return (
         <div>
         {/* create form  */}
         <details className="create">
@@ -70,24 +91,26 @@ class App extends React.Component {
         <br />
         <input className="myButton" type="submit" value="Add Gif" />
         </form>
+
+        <button onClick={this.selectMeme}>Random</button>
+
         </div>
+
         </details>
         {/* display content  */}
         <span>
         <img className="Eball"
         src="ball.png" alt="Create Ball" />
         <ul>
-          {this.state.ballArr.map((ball) => {
-            return (
-              <li key={ball._id}>
+              <li key={this.state.currentID}>
               <details className="view">
               <summary><img className="ballGif"
-              src={ball.url} alt={ball.name} /></summary>
+              src={this.state.currentUrl} alt={this.state.currentPhrase} /></summary>
               <br/>
-              <h2 className="gifName">{ball.name}</h2>
+              <h2 className="gifName">{this.state.currentPhrase}</h2>
               {/* edit button  */}
               <summary>Edit Gif</summary>
-              <form id={ball._id}
+              <form id={this.state.currentID}
               onSubmit={this.updateGif}>
               <label htmlFor="">Name</label>
               <br/>
@@ -104,23 +127,17 @@ class App extends React.Component {
               value="Update Ball"/>
               </form>
               <button className="myButton"
-              value={ball._id}
+              value={this.state.currentID}
               onClick={this.deleteGif}>Delete</button>
 
               </details>
               </li>
-
-            )
-          })
-        }
         </ul>
         </span>
-        </div>
-      )
-    }
+      </div>
+    )
+  }
 }
-
-
 
 
 
