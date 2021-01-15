@@ -86,7 +86,7 @@ module_exports = [
 		
     },
     {
-        name:"Maybe"
+        name:"Maybe",
         url:"https://media.giphy.com/media/3o6Mbq2xmPVwPKcOaI/giphy.gif"
     },
     {
@@ -108,5 +108,17 @@ module_exports = [
     {
         name:"I'm confused. Ask again!",
         url:"https://media.giphy.com/media/toB3AnUDkqE3GENKx0/giphy.gif"
+    },
+    {
+        name:"Signs point to...kinda",
+        url:"https://media.giphy.com/media/4JVTF9zR9BicshFAb7/giphy.gif"
+    },
+    {
+        name:"Why are you asking me?",
+        url:"https://media.giphy.com/media/QyyPO5zC7KEkl6xPfq/giphy.gif"
+    },
+    {
+        name:"Maybe...but don't put any money on it.",
+        url:"https://media.giphy.com/media/THJ2ageyNjvALKm6gH/giphy.gif"
     }
-]
+];
