@@ -67,7 +67,7 @@ class App extends React.Component {
         })
   }
 
-  render = () => { 
+  render = () => {
     return (
         <div>
         {/* create form  */}
@@ -91,25 +91,27 @@ class App extends React.Component {
         <br />
         <input className="myButton" type="submit" value="Add Gif" />
         </form>
-<<<<<<< HEAD
+
         </div>
-=======
-        <button onClick={this.selectMeme}>Random</button>
->>>>>>> 2ce686a3007b5045197ac52a5d9db2e65b72ef1d
+
         </details>
+        <button className="myButton" onClick={this.selectMeme}>Ask 8 Ball</button>
+
         {/* display content  */}
         <span>
         <img className="Eball"
-        src="ball.png" alt="Create Ball" />
+        src="8.png" alt="Create Ball" />
+
         <ul>
               <li key={this.state.currentID}>
               <details className="view">
               <summary><img className="ballGif"
               src={this.state.currentUrl} alt={this.state.currentPhrase} /></summary>
+              <div className="formBorder edit">
               <br/>
               <h2 className="gifName">{this.state.currentPhrase}</h2>
               {/* edit button  */}
-              <summary>Edit Gif</summary>
+              <summary>Edit Gif</summary><br/>
               <form id={this.state.currentID}
               onSubmit={this.updateGif}>
               <label htmlFor="">Name</label>
@@ -122,6 +124,11 @@ class App extends React.Component {
               <label htmlFor="image">Image</label>
               <br/>
               <input
+              type="text"
+              id="name"
+              onChange={this.handleChange} />
+              <br/>
+              <input
               className="myButton"
               type="submit"
               value="Update Ball"/>
@@ -129,8 +136,9 @@ class App extends React.Component {
               <button className="myButton"
               value={this.state.currentID}
               onClick={this.deleteGif}>Delete</button>
-
+              </div>
               </details>
+
               </li>
         </ul>
         </span>
