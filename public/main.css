@@ -6,7 +6,9 @@
   --yellow-bg-color: #F4E453;
   --offwhite-bg-color: #EDE7D1;
 }
-
+html {
+  height: 100vh;
+}
 body {
   background-color: var(--offwhite-bg-color);
 
