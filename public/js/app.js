@@ -68,7 +68,7 @@ class App extends React.Component {
   }
 
 
-  render = () => { 
+  render = () => {
     return (
         <div>
         {/* create form  */}
@@ -79,12 +79,14 @@ class App extends React.Component {
         <h3>Add new Gif to 8 Ball</h3>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="name">Name</label>
+          <br/>
           <input
           type="text"
           id="name"
           onChange={this.handleChange} />
           <br />
           <label htmlFor="url">Image</label>
+          <br/>
           <input
           type='text'
           id='url'
@@ -94,17 +96,16 @@ class App extends React.Component {
         </form>
 
 
-        <button onClick={this.selectMeme}>Random</button>
-
         </div>
 
         </details>
-        <button className="myButton" onClick={this.selectMeme}>Ask 8 Ball</button>
+
 
         {/* display content  */}
         <span>
         <img className="Eball"
         src="8.png" alt="Create Ball" />
+        <button className="myButton" onClick={this.selectMeme}>Ask 8 Ball</button>
 
         <ul>
               <li key={this.state.currentID}>
