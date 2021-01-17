@@ -177,7 +177,7 @@ and (min-width : 480px) {
     margin: 5px auto;
   }
   .ask {
-
+    margin-top: 20px;
   }
   .myButton:hover {
     background:linear-gradient(to bottom, var(--mellon-bg-color) 5%, var(--yellow-bg-color) 100%);
@@ -192,22 +192,22 @@ and (min-width : 480px) {
     position: static;
     bottom: 0;
     width: 100%;
-    height: 200px;
+    height: 100px;
     color:#292929 ;
     background-color: darkgray;
+
   }
   p {
     font-size: 20px;
     margin: 5px;
     padding: 10px;
   }
-  .banu, .aj {
-    display: block;
-    margin: 0 auto;
+  .social {
+    display: flex;
+    justify-content: space-between;
     text-align: center;
-    float: right;
-    margin-right: 100px;
-    height: 40px;
+    padding: 0 20% 0 20%;
+
   }
 
   .fab {

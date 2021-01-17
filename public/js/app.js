@@ -76,7 +76,10 @@ class App extends React.Component {
         <summary><img className="ballCreate"
         src="ball.png" alt="Create Ball" /></summary>
         <div className="formBorder">
-        <h3>Add new Gif to 8 Ball</h3>
+        <p>We wanted to share a fun app that is designed to help with stress and put a smile on your face. Simply ask the 8 ball a question and click the ask button.In this app you can add new gifs by simply adding a name and url to the creat button. This button is hidden inside the 8 ball logo. </p>
+
+        <h3>You can also add a new Gif to 8 Ball in this form</h3>
+
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="name">Name</label>
           <br/>
