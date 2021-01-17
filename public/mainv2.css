@@ -17,10 +17,212 @@ body {
   margin: 0;
 }
 
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 900px) {
+
+  /* ==========Logo============== */
+  .container {
+      background-color: darkgray;
+      height: 250px;
+  }
+  .logo {
+    display: block;
+    margin: -10px auto 0 auto;
+    padding-bottom: 30px;
+    width: 500px;
+    height: 250px;
+  }
+
+  /* ============Tag's=============== */
+  h2, h3 {
+    text-align: center;
+    padding: 2px;
+  }
+
+  img, input, button, label, summary,span, {
+    display: block;
+    margin: 0 auto 0 auto;
+    text-align: center;
+  }
+  li {
+    list-style-type: none;
+  }
+  label, summary, input {
+    margin: 2px auto;
+    padding: 5px;
+  }
+  input {
+    width: 300px;
+  }
+  summary {
+    height: 0px;
+  }
+
+  /* ==========Create 8 ball ============== */
+  .ballCreate {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    bottom: 170px;
+    left: 10px;
+    height: 125px;
+    width: 125px;
+
+  }
+  .ballCreate:hover {
+      cursor: url("https://icons.iconarchive.com/icons/anton-gerasimenko/simpsons/16/Hand-icon.png"), auto;
+  }
+  .ballCreate:active {
+    cursor: url("https://icons.iconarchive.com/icons/anton-gerasimenko/simpsons/32/Hand-icon.png"), auto;
+  }
+
+  .ballCreate:hover {
+    height: 135px;
+    width: 135px;
+  }
+
+  /* =========8Ball=========== */
+  .Eball {
+    display: block;
+    margin: 100px auto 10px auto;
+    position: relative;
+    height: auto;
+    width: 50vw;
+  }
+
+  .Eball:hover {
+    -webkit-animation-duration:.5s;
+    -webkit-animation-name: shake;
+    -webkit-animation-iteration-count: infinite;
+  }
+
+  /* ===========gif in ball======= */
+  .ballGif {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    bottom: 900px ;
+    height: 45vh ;
+    width: 40vw;
+    border-radius: 20%;
+
+
+    /* Configure it for Chrome and Safari */
+    -webkit-animation-duration:6s;
+    -webkit-animation-name:spin;
+    -webkit-animation-timing-function:linear;
+
+  }
+  .ballGif:hover {
+    cursor: url("https://icons.iconarchive.com/icons/anton-gerasimenko/simpsons/16/Hand-icon.png"), auto;
+
+   }
+   .ballGif:active {
+     cursor: url("https://icons.iconarchive.com/icons/anton-gerasimenko/simpsons/32/Hand-icon.png"), auto;
+
+   }
+
+
+   /* ==========forms============== */
+   .formBorder {
+     position: relative;
+     display: block;
+     margin: 10px auto 100px auto;
+     text-align: center;
+     box-shadow: 0px 2px 4px 2px #464647;
+     background:linear-gradient(to bottom, var(--offwhite-bg-color) 5%, var(--purple-bg-color) 100%);
+     background-color:#d1d7e6;
+     border-radius:10px;
+     border:1px solid #4e6096;
+     text-decoration:none;
+     color:var(--red-bg-color);
+     width: 500px;
+     padding: 15px;
+   }
+   .edit {
+     width: 500px;
+   }
+
+
+  .view summary::-webkit-details-marker {
+    display:none;
+  }
+  .view summary:focus {
+    outline: none;
+  }
+  .create summary::-webkit-details-marker {
+    display:none;
+  }
+  .create summary:focus {
+    outline: none;
+  }
+  /* =========Button==================== */
+  .myButton {
+    box-shadow: 6px 8px 5px -6px var(--blue-bg-color);
+    background:linear-gradient(to bottom, var(--yellow-bg-color) 5%, var(--mellon-bg-color) 100%);
+    background-color:var(--offwhite-bg-color);
+    border-radius:8px;
+    border:1px solid var(--purple-bg-color);
+    display:block;
+    cursor:pointer;
+    color:var(--offwhite-bg-color);
+    font-size:17px;
+    font-weight:bold;
+    padding:10px 18px;
+    text-decoration:none;
+    text-shadow:2px 2px 0px #666266;
+    margin: 5px auto;
+  }
+  .myButton:hover {
+    background:linear-gradient(to bottom, var(--mellon-bg-color) 5%, var(--yellow-bg-color) 100%);
+    background-color:var(--purple-bg-color)
+  }
+  .myButton:active {
+    position:relative;
+    top:1px;
+  }
+  /*============ footer============ */
+  footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    color:#292929 ;
+    background-color: darkgray;
+  }
+  p {
+    font-size: 20px;
+    margin: 5px;
+    padding: 10px;
+  }
+  .banu, .aj {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    float: right;
+    margin-right: 100px;
+    height: 40px;
+  }
+
+  .fab {
+    font-size: 40px;
+    color: #3b5998;
+    padding-bottom: 30px;
+
+  }
+   a:hover .fab {
+    color: #007bb6
+  }
+}
+
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
+
   /* ==========Logo============== */
   .container {
       background-color: darkgray;
@@ -63,10 +265,11 @@ and (max-device-width : 480px) {
   .ballCreate {
     position: relative;
     display: block;
-    bottom: 145px;
-    left: 452px;
-    height: 80px;
-    width: 80px;
+    margin: 0 auto;
+    bottom: 148px;
+    left: 5px;
+    height: 90px;
+    width: 90px;
 
   }
   .ballCreate:hover {
@@ -102,8 +305,8 @@ and (max-device-width : 480px) {
     margin: 0 auto;
     position: relative;
     bottom: 950px ;
-    height: 60vw ;
-    width: 36vh;
+    height: 30vh ;
+    width: 70vw;
     border-radius: 20%;
 
 
@@ -216,14 +419,6 @@ and (max-device-width : 480px) {
 }
 
 
-
-/* Desktops and laptops ----------- */
-@media only screen
-and (min-width : 1224px) {
-  body{
-    background-color: blue;
-  }
-}
 
 
 /* ======Anamation ============= */
