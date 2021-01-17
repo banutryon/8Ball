@@ -104,7 +104,7 @@ class App extends React.Component {
         {/* display content  */}
         <span>
         <img className="Eball"
-        src="8.png" alt="Create Ball" />
+        src="8ball.png" alt="Create Ball" />
         <button className="myButton" onClick={this.selectMeme}>Ask 8 Ball</button>
 
         <ul>

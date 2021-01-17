@@ -305,16 +305,18 @@ and (max-device-width : 480px) {
     display: block;
     margin: 0 auto;
     position: relative;
-    bottom: 950px ;
-    height: 30vh ;
-    width: 70vw;
-    border-radius: 20%;
+    bottom: 932px;
+    height: 25vh;
+    width: 65vw;
+    border-radius: 16%;
 
 
     /* Configure it for Chrome and Safari */
+
     -webkit-animation-duration:6s;
     -webkit-animation-name:spin;
     -webkit-animation-timing-function:linear;
+
 
   }
   .ballGif:hover {
