@@ -143,6 +143,7 @@ and (min-width : 900px) {
    }
    .edit {
      width: 500px;
+     margin-bottom: 40px;
    }
 
 
@@ -389,13 +390,13 @@ and (max-device-width : 480px) {
     position: sticky;
     bottom: 0;
     width: 100%;
-    height: 200px;
+    height: 300px;
     color:#292929 ;
     background-color: darkgray;
   }
   p {
     margin: 5px;
-    padding: 10px;
+    padding: 40px 10px 30px 10px;
   }
   .banu, .aj {
     text-align: center;
