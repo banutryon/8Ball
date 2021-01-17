@@ -393,6 +393,7 @@ and (max-device-width : 480px) {
     height: 300px;
     color:#292929 ;
     background-color: darkgray;
+    margin-top: 100px;
   }
   p {
     margin: 5px;
