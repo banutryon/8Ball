@@ -99,8 +99,8 @@ and (max-device-width : 480px) {
   /* ===========gif in ball======= */
   .ballGif {
     display: block;
+    margin: 0 auto;
     position: relative;
-    left: 100px;
     bottom: 950px ;
     height: 60vw ;
     width: 36vh;
