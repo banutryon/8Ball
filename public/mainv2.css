@@ -20,7 +20,7 @@ body {
 
 /* Desktops and laptops ----------- */
 @media only screen
-and (min-width : 900px) {
+and (min-width : 480px) {
 
   /* ==========Logo============== */
   .container {
@@ -106,7 +106,7 @@ and (min-width : 900px) {
     bottom: 600px ;
     height: 340px ;
     width: 400px;
-    border-radius: 18%;
+    border-radius: 20%;
 
 
     /* Configure it for Chrome and Safari */
@@ -175,6 +175,9 @@ and (min-width : 900px) {
     text-decoration:none;
     text-shadow:2px 2px 0px #666266;
     margin: 5px auto;
+  }
+  .ask {
+
   }
   .myButton:hover {
     background:linear-gradient(to bottom, var(--mellon-bg-color) 5%, var(--yellow-bg-color) 100%);
