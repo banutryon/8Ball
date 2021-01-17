@@ -127,7 +127,7 @@ and (max-device-width : 480px) {
    .formBorder {
      position: relative;
      display: block;
-     margin: 10px auto 40px auto;
+     margin: 10px auto 100px auto;
      text-align: center;
      box-shadow: 0px 2px 4px 2px #464647;
      background:linear-gradient(to bottom, var(--offwhite-bg-color) 5%, var(--purple-bg-color) 100%);
