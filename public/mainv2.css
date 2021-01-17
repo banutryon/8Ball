@@ -89,7 +89,7 @@ and (min-width : 900px) {
     margin: 100px auto 10px auto;
     position: relative;
     height: auto;
-    width: 50vw;
+    width: 600px;
   }
 
   .Eball:hover {
@@ -103,10 +103,10 @@ and (min-width : 900px) {
     display: block;
     margin: 0 auto;
     position: relative;
-    bottom: 900px ;
-    height: 45vh ;
-    width: 40vw;
-    border-radius: 20%;
+    bottom: 600px ;
+    height: 340px ;
+    width: 400px;
+    border-radius: 18%;
 
 
     /* Configure it for Chrome and Safari */
