@@ -98,6 +98,7 @@ and (min-width : 480px) {
     -webkit-animation-iteration-count: infinite;
   }
 
+
   /* ===========gif in ball======= */
   .ballGif {
     display: block;
@@ -206,8 +207,7 @@ and (min-width : 480px) {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    padding: 0 20% 0 20%;
-
+    padding: .5% 20% 0 20%;
   }
 
   .fab {
