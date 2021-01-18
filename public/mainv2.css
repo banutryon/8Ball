@@ -319,7 +319,7 @@ and (max-device-width : 480px) {
     margin: 0 auto;
     position: relative;
     bottom: 931px;
-    height: 25vh;
+    height: 30vh;
     width: 65vw;
     border-radius: 15%;
 
@@ -421,7 +421,7 @@ and (max-device-width : 480px) {
     padding: 10px 10% 0 10%;
   }
   .banu, .aj {
-    font-size: 12px;
+    font-size: 16px;
   }
   .created {
     text-align: center;
@@ -429,7 +429,7 @@ and (max-device-width : 480px) {
     margin: 10px 0 -20px 0;
   }
   .fab {
-    font-size: 30px;
+    font-size: 36px;
     color: #3b5998;
 
   }
