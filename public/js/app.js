@@ -4,7 +4,7 @@ class App extends React.Component {
     url: "",
     ballArr: [],
     currentPhrase: "",
-    currentUrl: "",
+    currentUrl: "https://lh3.googleusercontent.com/proxy/bW2gavOQbrCSVqIhgR3GGyxWT8t-UuwPFCzS0cSkyxjUZKjcMTUAGEDKwstiYfZGWm64l8y5FHhnd-NhL6Kz_ae-dw",
     currentID:""
   }
   handleChange = (event) => {
