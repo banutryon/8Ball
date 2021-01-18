@@ -25,11 +25,11 @@ and (min-width : 480px) {
   /* ==========Logo============== */
   .container {
       background-color: darkgray;
-      height: 250px;
+      height: 230px;
   }
   .logo {
     display: block;
-    margin: -10px auto 0 auto;
+    margin: -40px auto 0 auto;
     padding-bottom: 30px;
     width: 500px;
     height: 250px;
@@ -65,10 +65,10 @@ and (min-width : 480px) {
     position: relative;
     display: block;
     margin: 0 auto;
-    bottom: 170px;
+    bottom: 150px;
     left: 10px;
-    height: 125px;
-    width: 125px;
+    height: 120px;
+    width: 120px;
 
   }
   .ballCreate:hover {
@@ -196,7 +196,7 @@ and (min-width : 480px) {
     position: static;
     bottom: 0;
     width: 100%;
-    height: 100px;
+    height: 150px;
     color:#292929 ;
     background-color: darkgray;
 
@@ -208,8 +208,8 @@ and (min-width : 480px) {
   }
   .created {
     text-align: center;
-    padding: 10px 0 0 0 ;
-    margin: 10px 0 -20px 0;
+    padding: 20px 0 0 0 ;
+    margin: 20px 0 -20px 0;
   }
   .social {
     display: flex;
@@ -299,7 +299,7 @@ and (max-device-width : 480px) {
   /* =========8Ball=========== */
   .Eball {
     display: block;
-    margin: 20px auto 10px auto;
+    margin: 120px auto 10px auto;
     position: relative;
     height: auto;
     width: 100vw;
@@ -318,8 +318,8 @@ and (max-device-width : 480px) {
     display: block;
     margin: 0 auto;
     position: relative;
-    bottom: 400px;
-    height: 26vh;
+    bottom: 931px;
+    height: 25vh;
     width: 65vw;
     border-radius: 15%;
 
@@ -402,10 +402,10 @@ and (max-device-width : 480px) {
   }
   /*============ footer============ */
   footer {
-    position: sticky;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    height: 80px;
+    height: 140px;
     color:#292929 ;
     background-color: darkgray;
     margin-top: 110px;
