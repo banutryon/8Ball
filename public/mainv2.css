@@ -8,7 +8,6 @@
 }
 html, body {
   height: 100%;
-  overflow: scroll;
 }
 body {
   background-color: var(--offwhite-bg-color);
@@ -319,7 +318,7 @@ and (max-device-width : 480px) {
     display: block;
     margin: 0 auto;
     position: relative;
-    bottom: 931px;
+    bottom: 1000px;
     height: 27vh;
     width: 65vw;
     border-radius: 15%;
@@ -361,6 +360,7 @@ and (max-device-width : 480px) {
    }
    .edit {
      width: 70vw !important;
+
    }
 
 
@@ -400,6 +400,11 @@ and (max-device-width : 480px) {
   .myButton:active {
     position:relative;
     top:1px;
+  }
+  .ask {
+    padding: 40px 60px;
+    font-size: 36px;
+    border-radius: 16px;
   }
   /*============ footer============ */
   footer {
