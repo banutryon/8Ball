@@ -34,9 +34,9 @@ and (min-width : 480px) {
     width: 500px;
     height: 250px;
   }
-  .blank {
+  /* .blank {
     display: none;
-  }
+  } */
   /* ============Tag's=============== */
   h2, h3 {
     text-align: center;
