@@ -355,11 +355,11 @@ and (max-device-width : 480px) {
      border:1px solid #4e6096;
      text-decoration:none;
      color:var(--red-bg-color);
-     width: 300px;
+     width: 70vw;
      padding: 15px;
    }
    .edit {
-     width: 300px !important;
+     width: 70vw !important;
    }
 
 
