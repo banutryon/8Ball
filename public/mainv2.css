@@ -8,6 +8,7 @@
 }
 html, body {
   height: 100%;
+  overflow: scroll;
 }
 body {
   background-color: var(--offwhite-bg-color);
