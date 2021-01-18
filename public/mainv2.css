@@ -411,7 +411,7 @@ and (max-device-width : 480px) {
     padding-bottom: 200px;
   }
   .blank {
-    height: 800px;
+    height: 300px;
   }
   /*============ footer============ */
   footer {
