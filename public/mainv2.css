@@ -403,7 +403,7 @@ and (max-device-width : 480px) {
     height: 80px;
     color:#292929 ;
     background-color: darkgray;
-    margin-top: 100px;
+    margin-top: 110px;
   }
   p {
     margin: 5px;
@@ -417,6 +417,11 @@ and (max-device-width : 480px) {
   }
   .banu, .aj {
     font-size: 12px;
+  }
+  .created {
+    text-align: center;
+    padding: 10px 0 0 0 ;
+    margin: 10px 0 -20px 0;
   }
   .fab {
     font-size: 30px;
