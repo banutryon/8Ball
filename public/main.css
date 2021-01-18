@@ -103,11 +103,11 @@ body {
       width: 100vw;
     }
 
-    .Eball:hover {
+    /* .Eball:hover {
       -webkit-animation-duration:.5s;
       -webkit-animation-name: shake;
       -webkit-animation-iteration-count: infinite;
-    }
+    } */
 
     .shake {
       animation: "shake 0.5s 4"

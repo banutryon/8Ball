@@ -92,26 +92,29 @@ and (min-width : 480px) {
     width: 600px;
   }
 
-  .Eball:hover {
+  /* .Eball:hover {
     -webkit-animation-duration:.5s;
     -webkit-animation-name: shake;
     -webkit-animation-iteration-count: infinite;
+  } */
+  .shake {
+    animation: "shake 0.5s 4"
   }
-
 
   /* ===========gif in ball======= */
   .ballGif {
     display: block;
     margin: 0 auto;
     position: relative;
-    bottom: 600px ;
+    bottom: 610px ;
     height: 340px ;
     width: 400px;
-    border-radius: 20%;
+    border-radius: 18%;
 
 
     /* Configure it for Chrome and Safari */
-    -webkit-animation-duration:6s;
+
+    -webkit-animation-duration:2.5s;
     -webkit-animation-name:spin;
     -webkit-animation-timing-function:linear;
 
@@ -297,26 +300,28 @@ and (max-device-width : 480px) {
     width: 100vw;
   }
 
-  .Eball:hover {
+  /* .Eball:hover {
     -webkit-animation-duration:.5s;
     -webkit-animation-name: shake;
     -webkit-animation-iteration-count: infinite;
+  } */
+  .shake {
+    animation: "shake 0.5s 4"
   }
-
   /* ===========gif in ball======= */
   .ballGif {
     display: block;
     margin: 0 auto;
     position: relative;
-    bottom: 932px;
-    height: 28vh;
+    bottom: 944px;
+    height: 26vh;
     width: 65vw;
-    border-radius: 16%;
+    border-radius: 15%;
 
 
     /* Configure it for Chrome and Safari */
 
-    -webkit-animation-duration:6s;
+    -webkit-animation-duration:2.5s;
     -webkit-animation-name:spin;
     -webkit-animation-timing-function:linear;
 
@@ -431,23 +436,48 @@ and (max-device-width : 480px) {
 /* ======Anamation ============= */
 @-webkit-keyframes spin{
     0%{
-        opacity:0.2;
-        -webkit-transform:scale(0.2) rotate(0deg);
+        opacity:0;
+        -webkit-transform:scale(0.1);
     }
-    15%{
-        opacity:1;
-        -webkit-transform:scale(1) rotate(1080deg);
+    20%{
+        opacity:0;
+        -webkit-transform:scale(.1);
+    }
+    40%{
+        opacity:.2;
+
+        -webkit-transform:scale(.2);
+    }
+
+    50%{
+
+        opacity:.3;
+        -webkit-transform:scale(.3);
+    }
+    60%{
+
+        opacity:.6;
+        -webkit-transform:scale(.5);
+    }
+    70%{
+
+        opacity:.7;
+        -webkit-transform:scale(.7);
+    }
+    80%{
+
+        opacity:.8;
+        -webkit-transform:scale(.8);
     }
     90%{
+
         opacity:1;
-
-        -webkit-transform:scale(1) rotate(1080deg);
+        -webkit-transform:scale(.9);
     }
-
     100%{
 
         opacity:1;
-        -webkit-transform:scale(1) rotate(1080deg);
+        -webkit-transform:scale(1);
     }
 }
 
