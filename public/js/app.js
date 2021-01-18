@@ -178,7 +178,7 @@ class App extends React.Component {
 
               </li>
         </ul>
-        <img id="void" className="blank space"
+        <img id="void" className="blank"
         src="https://lh3.googleusercontent.com/proxy/bW2gavOQbrCSVqIhgR3GGyxWT8t-UuwPFCzS0cSkyxjUZKjcMTUAGEDKwstiYfZGWm64l8y5FHhnd-NhL6Kz_ae-dw" alt="" />
         </span>
       </div>

@@ -410,6 +410,9 @@ and (max-device-width : 480px) {
     margin-bottom: 300px;
     padding-bottom: 200px;
   }
+  .blank {
+    height: 300px;
+  }
   /*============ footer============ */
   footer {
     position: fixed;
