@@ -1,156 +1,273 @@
 
 :root {
-  --mellon-bg-color: #ffb142;
-  --blue-bg-color: #34ace0;
-  --red-bg-color: #b33939;
-  --yellow-bg-color: #ccae62;
-  --offwhite-bg-color: #f7f1e3;
+  --mellon-bg-color: #F59212;
+  --purple-bg-color: #5446C0;
+  --blue-bg-color: #1E2BFF;
+  --yellow-bg-color: #F4E453;
+  --offwhite-bg-color: #EDE7D1;
 }
-*{
-  padding: 0;
-  margin: 0;
+html {
+  height: 90vh;
 }
 body {
   background-color: var(--offwhite-bg-color);
-
+  height: 100vh;
 }
-.container {
-    background-repeat: no-repeat;
-}
-h1, h2, h3 {
-  text-align: center;
-}
-h1 {
-  background-color: var(--yellow-bg-color);
-  color: var(--red-bg-color);
-
-}
-
-img, input, button, label, summary {
-  display: block;
-  margin: 10px auto;
-  text-align: center;
-}
-.ballCreate {
-  margin-top: -135px;
-  margin-left: 42.5%;
-  height: 87px;
-  width: 87px;
-}
-.ballCreate:hover {
-    cursor: url("https://icons.iconarchive.com/icons/anton-gerasimenko/simpsons/16/Hand-icon.png"), auto;
-}
-.ballCreate:active {
-  cursor: url("https://icons.iconarchive.com/icons/anton-gerasimenko/simpsons/32/Hand-icon.png"), auto;
+* {
+  padding: 0;
+  margin: 0;
 }
 
 
-.ballCreate:hover {
-  height: 92px;
-  width: 92px;
-}
-.Eball {
-  z-index: -1;
-  height: auto;
-  width: 100vw;
-}
-.ballGif {
-  display: block;
-  margin: -83.5% auto 0 auto;
-  height: auto;
-  width: 55vw;
-  border-radius: 20%;
-}
-.ballGif:hover {
-  cursor: url("https://icons.iconarchive.com/icons/anton-gerasimenko/simpsons/16/Hand-icon.png"), auto;
-
- }
- .ballGif:active {
-   cursor: url("https://icons.iconarchive.com/icons/anton-gerasimenko/simpsons/32/Hand-icon.png"), auto;
-
- }
- .view, .formBorder {
-   margin: 10px auto;
-   text-align: center;
-   cursor:pointer;
-   box-shadow: 0px 2px 4px 2px #464647;
- 	background:linear-gradient(to bottom, #d1d7e6 5%, #1465c9 100%);
- 	background-color:#d1d7e6;
- 	border-radius:10px;
- 	border:1px solid #4e6096;
- 	text-decoration:none;
- 	text-shadow:-2px 1px 0px #4064a1;
-   margin-bottom: 15px;
-   color:#ffffff;
-   width: 55vw;
- }
- .formBorder {
-
- }
-
-span, summary{
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-}
-li {
-  list-style-type: none;
-}
-.view summary::-webkit-details-marker {
-  display:none;
-}
-.view summary:focus {
-  outline: none;
-}
-.create summary::-webkit-details-marker {
-  display:none;
-}
-.create summary:focus {
-  outline: none;
-}
-
-.myButton {
-	box-shadow: 6px 8px 5px -6px #3482a3;
-	background:linear-gradient(to bottom, #ccae62 5%, #b33939 100%);
-	background-color:#ccae62;
-	border-radius:8px;
-	border:1px solid #34ace0;
-	display:inline-block;
-	cursor:pointer;
-	color:#f7f1e3;
-	font-family:Arial;
-	font-size:17px;
-	font-weight:bold;
-	padding:10px 18px;
-	text-decoration:none;
-	text-shadow:2px 2px 0px #666266;
-}
-.myButton:hover {
-	background:linear-gradient(to bottom, #b33939 5%, #ccae62 100%);
-	background-color:#b33939;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-
-
-/* ========Media============== */
-@media (min-width: 900px) {
-  .ballCreate {
-    height: 120px;
-    width: 120px;
+@media screen and (min-width: 980px) /* Desktop */ {
+  body {
+    background: red;
   }
-  .Eball {
-    z-index: -1;
-    height: auto;
-    width: 80vw;
+}
+
+@media screen  and (max-width: 979px) /* Tablet */ {
+  body {
+    background: blue;
   }
-  .ballGif {
-    display: block;
-    margin: -66.5% auto 0 auto;
-    height: auto;
-    width: 46vw;
-    border-radius: 20%;
+}
+
+@media screen and (max-width: 500px) /* Mobile */ {
+  body {
+    background: green;
   }
+    /* ==========Logo============== */
+    .container {
+        background-color: darkgray;
+        height: 320px;
+    }
+    .logo {
+      display: block;
+      margin: -30px auto 0 auto;
+      padding-bottom: 30px;
+      width: 700px;
+      height: 340px;
+    }
+
+    /* ============Tag's=============== */
+    h2, h3 {
+      text-align: center;
+      padding: 2px;
+    }
+
+    img, input, button, label, summary,span, {
+      display: block;
+      margin: 0 auto 0 auto;
+      text-align: center;
+    }
+    li {
+      list-style-type: none;
+    }
+    label, summary, input {
+      margin: 2px auto;
+      padding: 5px;
+    }
+    input {
+      width: 200px;
+    }
+    summary {
+      height: 0px;
+    }
+
+    /* ==========Create 8 ball ============== */
+    .ballCreate {
+      position: static;
+      display: block;
+      margin: -13.2rem 400px 0 415px;
+      height: 170px;
+      width: 170px;
+
+    }
+    .ballCreate:hover {
+        cursor: url("https://icons.iconarchive.com/icons/anton-gerasimenko/simpsons/16/Hand-icon.png"), auto;
+    }
+    .ballCreate:active {
+      cursor: url("https://icons.iconarchive.com/icons/anton-gerasimenko/simpsons/32/Hand-icon.png"), auto;
+    }
+
+    .ballCreate:hover {
+      height: 200px;
+      width: 200px;
+    }
+
+    /* =========8Ball=========== */
+    .Eball {
+      display: block;
+      margin: 100px auto 10px auto;
+      position: relative;
+      height: auto;
+      width: 100vw;
+    }
+
+    /* .Eball:hover {
+      -webkit-animation-duration:.5s;
+      -webkit-animation-name: shake;
+      -webkit-animation-iteration-count: infinite;
+    } */
+
+    .shake {
+      animation: "shake 0.5s 4"
+    }
+
+    /* ===========gif in ball======= */
+    .ballGif {
+      display: block;
+      position: relative;
+      left: 110px;
+      top: -975px ;
+      height: 650px ;
+      width: 750px;
+      border-radius: 20%;
+      border: 2px solid red;
+
+      /* Configure it for Chrome and Safari */
+      -webkit-animation-duration:6s;
+      -webkit-animation-name:spin;
+      -webkit-animation-timing-function:linear;
+
+    }
+    .ballGif:hover {
+      cursor: url("https://icons.iconarchive.com/icons/anton-gerasimenko/simpsons/16/Hand-icon.png"), auto;
+
+     }
+     .ballGif:active {
+       cursor: url("https://icons.iconarchive.com/icons/anton-gerasimenko/simpsons/32/Hand-icon.png"), auto;
+
+     }
+
+
+     /* ==========forms============== */
+     .formBorder {
+       position: relative;
+       display: block;
+       margin: 10px auto 40px auto;
+       text-align: center;
+       box-shadow: 0px 2px 4px 2px #464647;
+     	 background:linear-gradient(to bottom, var(--offwhite-bg-color) 5%, var(--purple-bg-color) 100%);
+     	 background-color:#d1d7e6;
+     	 border-radius:10px;
+     	 border:1px solid #4e6096;
+     	 text-decoration:none;
+       color:var(--red-bg-color);
+       width: 300px;
+       padding: 15px;
+     }
+     .edit {
+       width: 300px !important;
+     }
+
+
+    .view summary::-webkit-details-marker {
+      display:none;
+    }
+    .view summary:focus {
+      outline: none;
+    }
+    .create summary::-webkit-details-marker {
+      display:none;
+    }
+    .create summary:focus {
+      outline: none;
+    }
+    /* =========Button==================== */
+    .myButton {
+    	box-shadow: 6px 8px 5px -6px var(--blue-bg-color);
+    	background:linear-gradient(to bottom, var(--yellow-bg-color) 5%, var(--mellon-bg-color) 100%);
+    	background-color:var(--offwhite-bg-color);
+    	border-radius:8px;
+    	border:1px solid var(--purple-bg-color);
+    	display:block;
+    	cursor:pointer;
+    	color:var(--offwhite-bg-color);
+    	font-size:17px;
+    	font-weight:bold;
+    	padding:10px 18px;
+    	text-decoration:none;
+    	text-shadow:2px 2px 0px #666266;
+      margin: 5px auto;
+    }
+    .myButton:hover {
+    	background:linear-gradient(to bottom, var(--mellon-bg-color) 5%, var(--yellow-bg-color) 100%);
+    	background-color:var(--purple-bg-color)
+    }
+    .myButton:active {
+    	position:relative;
+    	top:1px;
+    }
+    /*============ footer============ */
+    footer {
+      position: relative;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 220px;
+      color:#292929 ;
+      background-color: darkgray;
+    }
+    p {
+      margin: 15px;
+      padding: 20px;
+    }
+    .banu, .aj {
+      text-align: center;
+    }
+    .banu {
+      float: left;
+      margin-left: 300px;
+    }
+    .aj {
+      float:right;
+      margin-right: 300px;
+    }
+    .fab {
+      font-size: 40px;
+      color: #3b5998;
+
+    }
+     a:hover .fab {
+      color: #007bb6
+    }
+  }
+
+
+/* ======Anamation ============= */
+@-webkit-keyframes spin{
+    0%{
+        opacity:0.2;
+        -webkit-transform:scale(0.2) rotate(0deg);
+    }
+    15%{
+        opacity:1;
+        -webkit-transform:scale(1) rotate(1080deg);
+    }
+    90%{
+        opacity:1;
+
+        -webkit-transform:scale(1) rotate(1080deg);
+    }
+
+    100%{
+
+        opacity:1;
+        -webkit-transform:scale(1) rotate(1080deg);
+    }
+}
+
+@-webkit-keyframes shake{
+  0% { transform: translate(10px, 10px) rotate(0deg); }
+  10% { transform: translate(-7px, -9px) rotate(-1deg); }
+  20% { transform: translate(-3px, 5px) rotate(1deg); }
+  30% { transform: translate(3px, 6px) rotate(0deg); }
+  40% { transform: translate(1px, -3px) rotate(1deg); }
+  50% { transform: translate(-2px, 4px) rotate(-1deg); }
+  60% { transform: translate(-8px, 3px) rotate(0deg); }
+  70% { transform: translate(6px, 0px) rotate(-1deg); }
+  80% { transform: translate(-5px, -4px) rotate(1deg); }
+  90% { transform: translate(3px, 1px) rotate(0deg); }
+  100% { transform: translate(2px, -4px) rotate(-1deg); }
 }

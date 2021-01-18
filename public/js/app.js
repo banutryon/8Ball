@@ -1,10 +1,11 @@
 class App extends React.Component {
+  ballShook = false;
   state = {
     name: "",
     url: "",
     ballArr: [],
     currentPhrase: "",
-    currentUrl: "",
+    currentUrl: "https://lh3.googleusercontent.com/proxy/bW2gavOQbrCSVqIhgR3GGyxWT8t-UuwPFCzS0cSkyxjUZKjcMTUAGEDKwstiYfZGWm64l8y5FHhnd-NhL6Kz_ae-dw",
     currentID:""
   }
   handleChange = (event) => {
@@ -39,8 +40,34 @@ class App extends React.Component {
         })
       })
   }
+  addShake = () => {
+    document.getElementById("memeBall").style.animation = "shake 0.5s 5";
+  }
+  removeShake = () => {
+    // document.getElementById("memeBall").style.animation = "";
+    document.getElementById("memeBall").style.animation = "none";
+  }
+  shakeBall = () => {
+    // event.preventDefault();
+    // if(this.ballShook) {
+    //   this.removeShake();
+    //   this.ballShook = false;
+    //   this.addShake();
+    // } else {
+    //   this.ballShook = true;
+    //   this.addShake();
+    // }
+    this.removeShake();
+    document.getElementById("memeBall").offsetHeight;
+    this.addShake();
+    // setTimeout(this.removeShake(), 2000);
+    // document.getElementById("memeBall").classList.remove("shake");
+    // void element.offsetWidth;
+    // document.getElementById("memeBall").classList.add("shake");
+  }
   selectMeme = (event) => {
     event.preventDefault();
+    this.shakeBall();
     let theData = this.state.ballArr;
     // console.log(`The data: ${theData}`);
     let arrLen = theData.length;
@@ -67,7 +94,8 @@ class App extends React.Component {
         })
   }
 
-  render = () => { 
+
+  render = () => {
     return (
         <div>
         {/* create form  */}
@@ -75,15 +103,20 @@ class App extends React.Component {
         <summary><img className="ballCreate"
         src="ball.png" alt="Create Ball" /></summary>
         <div className="formBorder">
-        <h3>Add new Gif to 8 Ball</h3>
+        <p>We wanted to share a fun app that is designed to help with stress and put a smile on your face. Simply ask the 8 ball a question and click the ask button.In this app you can add new gifs by simply adding a name and url to the creat button. This button is hidden inside the 8 ball logo. </p>
+
+        <h3>You can also add a new Gif to 8 Ball in this form</h3>
+
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="name">Name</label>
+          <br/>
           <input
           type="text"
           id="name"
           onChange={this.handleChange} />
           <br />
           <label htmlFor="url">Image</label>
+          <br/>
           <input
           type='text'
           id='url'
@@ -92,24 +125,30 @@ class App extends React.Component {
         <input className="myButton" type="submit" value="Add Gif" />
         </form>
 
-        <button onClick={this.selectMeme}>Random</button>
 
         </div>
 
         </details>
+
+
         {/* display content  */}
         <span>
-        <img className="Eball"
-        src="ball.png" alt="Create Ball" />
+        <img id="memeBall" className="Eball"
+        src="8ball.png" alt="Create Ball" />
+        <button className="myButton ask" onClick={this.selectMeme}>Ask 8 Ball</button>
+
         <ul>
               <li key={this.state.currentID}>
               <details className="view">
               <summary><img className="ballGif"
               src={this.state.currentUrl} alt={this.state.currentPhrase} /></summary>
+
+              <div className="formBorder edit">
               <br/>
               <h2 className="gifName">{this.state.currentPhrase}</h2>
               {/* edit button  */}
-              <summary>Edit Gif</summary>
+              <summary>Edit Gif</summary><br/>
+
               <form id={this.state.currentID}
               onSubmit={this.updateGif}>
               <label htmlFor="">Name</label>
@@ -122,6 +161,11 @@ class App extends React.Component {
               <label htmlFor="image">Image</label>
               <br/>
               <input
+              type="text"
+              id="name"
+              onChange={this.handleChange} />
+              <br/>
+              <input
               className="myButton"
               type="submit"
               value="Update Ball"/>
@@ -129,8 +173,9 @@ class App extends React.Component {
               <button className="myButton"
               value={this.state.currentID}
               onClick={this.deleteGif}>Delete</button>
-
+              </div>
               </details>
+
               </li>
         </ul>
         </span>
