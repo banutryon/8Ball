@@ -1,4 +1,5 @@
 class App extends React.Component {
+  ballShook = false;
   state = {
     name: "",
     url: "",
@@ -39,8 +40,34 @@ class App extends React.Component {
         })
       })
   }
+  addShake = () => {
+    document.getElementById("memeBall").style.animation = "shake 0.5s 5";
+  }
+  removeShake = () => {
+    // document.getElementById("memeBall").style.animation = "";
+    document.getElementById("memeBall").style.animation = "none";
+  }
+  shakeBall = () => {
+    // event.preventDefault();
+    // if(this.ballShook) {
+    //   this.removeShake();
+    //   this.ballShook = false;
+    //   this.addShake();
+    // } else {
+    //   this.ballShook = true;
+    //   this.addShake();
+    // }
+    this.removeShake();
+    document.getElementById("memeBall").offsetHeight;
+    this.addShake();
+    // setTimeout(this.removeShake(), 2000);
+    // document.getElementById("memeBall").classList.remove("shake");
+    // void element.offsetWidth;
+    // document.getElementById("memeBall").classList.add("shake");
+  }
   selectMeme = (event) => {
     event.preventDefault();
+    this.shakeBall();
     let theData = this.state.ballArr;
     // console.log(`The data: ${theData}`);
     let arrLen = theData.length;
@@ -106,7 +133,7 @@ class App extends React.Component {
 
         {/* display content  */}
         <span>
-        <img className="Eball"
+        <img id="memeBall" className="Eball"
         src="8ball.png" alt="Create Ball" />
         <button className="myButton ask" onClick={this.selectMeme}>Ask 8 Ball</button>
 
