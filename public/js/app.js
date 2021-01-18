@@ -180,6 +180,8 @@ class App extends React.Component {
         </ul>
         <img id="void" className="blank"
         src="https://lh3.googleusercontent.com/proxy/bW2gavOQbrCSVqIhgR3GGyxWT8t-UuwPFCzS0cSkyxjUZKjcMTUAGEDKwstiYfZGWm64l8y5FHhnd-NhL6Kz_ae-dw" alt="" />
+        <img id="void" className="blank"
+        src="https://media4.giphy.com/media/aFTt8wvDtqKCQ/giphy.webp?cid=ecf05e47oa841eb6d3b3ppcxpelhn4p1mc93arjajtfsbt5w&rid=giphy.webp" alt="" />
         </span>
       </div>
     )
